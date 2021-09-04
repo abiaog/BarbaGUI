@@ -1,0 +1,93 @@
+\hypertarget{classCDeceleratedMotion}{}\section{C\+Decelerated\+Motion Class Reference}
+\label{classCDeceleratedMotion}\index{C\+Decelerated\+Motion@{C\+Decelerated\+Motion}}
+
+
+Inheritance diagram for C\+Decelerated\+Motion\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{classCDeceleratedMotion__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C\+Decelerated\+Motion\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{classCDeceleratedMotion__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCDeceleratedMotion_a1bc6987d63b48780c9ef93c88eae5530}\label{classCDeceleratedMotion_a1bc6987d63b48780c9ef93c88eae5530}} 
+virtual void {\bfseries Handle\+Pointer\+EventL} (const T\+Pointer\+Event \&a\+Pointer\+Event)
+\item 
+\mbox{\Hypertarget{classCDeceleratedMotion_a8b11240612fdb78f9e3d202a64368b42}\label{classCDeceleratedMotion_a8b11240612fdb78f9e3d202a64368b42}} 
+void {\bfseries Start\+Move} ()
+\item 
+\mbox{\Hypertarget{classCDeceleratedMotion_a2b4c06a772988cdb40b62415739f10f5}\label{classCDeceleratedMotion_a2b4c06a772988cdb40b62415739f10f5}} 
+void {\bfseries Set\+Down\+Point} (const T\+Point \&a\+Point)
+\item 
+\mbox{\Hypertarget{classCDeceleratedMotion_affc8b87af909f3b7d337981e3e5f2714}\label{classCDeceleratedMotion_affc8b87af909f3b7d337981e3e5f2714}} 
+void {\bfseries Set\+Up\+Point} (const T\+Point \&a\+Point)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classCDeceleratedMotion}{C\+Decelerated\+Motion} $\ast$ \hyperlink{classCDeceleratedMotion_afe86cb77999ad4f58a4e555208c1a1f0}{NewL} (\hyperlink{classCCtlColumn}{C\+Ctl\+Column} $\ast$a\+Model, C\+Video\+List\+Ctl $\ast$a\+View)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classCDelManipulator}{C\+Del\+Manipulator}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCDeceleratedMotion_a29adc2f04f18bfca6ec676746cae3872}\label{classCDeceleratedMotion_a29adc2f04f18bfca6ec676746cae3872}} 
+static \hyperlink{classCDeceleratedMotion}{C\+Decelerated\+Motion} $\ast$ {\bfseries New\+LC} (\hyperlink{classCCtlColumn}{C\+Ctl\+Column} $\ast$a\+Model, C\+Video\+List\+Ctl $\ast$a\+View)
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCDeceleratedMotion_a7499e52650dbbe1322a271fadcf9663c}\label{classCDeceleratedMotion_a7499e52650dbbe1322a271fadcf9663c}} 
+enum {\bfseries T\+Motion\+State} \{ \newline
+{\bfseries K\+Ready\+Move}, 
+{\bfseries K\+Moving}, 
+{\bfseries K\+Moved}, 
+{\bfseries K\+Recovering}, 
+\newline
+{\bfseries K\+Recovered}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCDeceleratedMotion_aa7c139e2ecade795a8df53b6d01b1e5b}\label{classCDeceleratedMotion_aa7c139e2ecade795a8df53b6d01b1e5b}} 
+{\bfseries C\+Decelerated\+Motion} (\hyperlink{classCCtlColumn}{C\+Ctl\+Column} $\ast$a\+Model, C\+Video\+List\+Ctl $\ast$a\+View)
+\item 
+\mbox{\Hypertarget{classCDeceleratedMotion_a78ae777217ce1a6f54e64f7c4a855d9f}\label{classCDeceleratedMotion_a78ae777217ce1a6f54e64f7c4a855d9f}} 
+void {\bfseries ConstructL} ()
+\item 
+\mbox{\Hypertarget{classCDeceleratedMotion_a2d36daaec92cd6f34af5a5286648c48d}\label{classCDeceleratedMotion_a2d36daaec92cd6f34af5a5286648c48d}} 
+virtual void {\bfseries RunL} ()
+\item 
+\mbox{\Hypertarget{classCDeceleratedMotion_ae6292874608551ec8caa5cc4a9fb6a75}\label{classCDeceleratedMotion_ae6292874608551ec8caa5cc4a9fb6a75}} 
+virtual void {\bfseries Do\+Cancel} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCDeceleratedMotion_afe86cb77999ad4f58a4e555208c1a1f0}\label{classCDeceleratedMotion_afe86cb77999ad4f58a4e555208c1a1f0}} 
+\index{C\+Decelerated\+Motion@{C\+Decelerated\+Motion}!NewL@{NewL}}
+\index{NewL@{NewL}!C\+Decelerated\+Motion@{C\+Decelerated\+Motion}}
+\subsubsection{\texorpdfstring{New\+L()}{NewL()}}
+{\footnotesize\ttfamily \hyperlink{classCDeceleratedMotion}{C\+Decelerated\+Motion} $\ast$ C\+Decelerated\+Motion\+::\+NewL (\begin{DoxyParamCaption}\item[{\hyperlink{classCCtlColumn}{C\+Ctl\+Column} $\ast$}]{a\+Model,  }\item[{C\+Video\+List\+Ctl $\ast$}]{a\+View }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\hyperlink{classCDelManipulator}{C\+Del\+Manipulator}. 
+
+\hyperlink{classCDeceleratedMotion}{C\+Decelerated\+Motion} 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/peter/work/github/\+Barba\+G\+U\+I/inc/\+Ctl/ctlmanipulator.\+h\item 
+/home/peter/work/github/\+Barba\+G\+U\+I/src/\+Ctl/Ctl\+Manipulator.\+cpp\end{DoxyCompactItemize}

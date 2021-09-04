@@ -1,0 +1,9 @@
+<map id="MCtlManipulator" name="MCtlManipulator">
+<area shape="rect" id="node2" href="$classCDeceleratedMotion.html" title="CDeceleratedMotion" alt="" coords="182,5,323,32"/>
+<area shape="rect" id="node3" href="$classCDelManipulator.html" title="CDelManipulator" alt="" coords="193,56,312,83"/>
+<area shape="rect" id="node4" href="$classCDragManipulator.html" title="CDragManipulator" alt="" coords="189,107,316,133"/>
+<area shape="rect" id="node5" href="$classCDragManipulator2.html" title="CDragManipulator2" alt="" coords="185,157,320,184"/>
+<area shape="rect" id="node6" href="$classCItemSelector.html" title="CItemSelector" alt="" coords="199,208,306,235"/>
+<area shape="rect" id="node7" href="$classCMultiSelectManipulator.html" title="CMultiSelectManipulator" alt="" coords="171,259,335,285"/>
+<area shape="rect" id="node8" href="$classCScrollManipulator.html" title="CScrollManipulator" alt="" coords="187,309,319,336"/>
+</map>

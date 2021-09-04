@@ -1,0 +1,14 @@
+<map id="CCtlModel" name="CCtlModel">
+<area shape="rect" id="node3" href="$classCCtlColumn.html" title="CCtlColumn" alt="" coords="248,56,343,83"/>
+<area shape="rect" id="node4" href="$classCCtlGraphic.html" title="CCtlGraphic" alt="" coords="248,107,343,133"/>
+<area shape="rect" id="node11" href="$classCCtlPicture.html" title="CCtlPicture" alt="" coords="250,157,341,184"/>
+<area shape="rect" id="node12" href="$classCCtlRow.html" title="CCtlRow" alt="" coords="257,208,333,235"/>
+<area shape="rect" id="node13" href="$classCCtlText.html" title="CCtlText" alt="" coords="258,259,333,285"/>
+<area shape="rect" id="node5" href="$classCCtlGraphicBody.html" title="CCtlGraphicBody" alt="" coords="405,5,529,32"/>
+<area shape="rect" id="node6" href="$classCCtlGraphicHeader.html" title="CCtlGraphicHeader" alt="" coords="399,56,535,83"/>
+<area shape="rect" id="node7" href="$classCCtlGraphicHeader3D.html" title="CCtlGraphicHeader3D" alt="" coords="391,107,544,133"/>
+<area shape="rect" id="node8" href="$classCCtlGraphicTrail.html" title="CCtlGraphicTrail" alt="" coords="408,157,527,184"/>
+<area shape="rect" id="node9" href="$classCCtlRect.html" title="CCtlRect" alt="" coords="429,208,506,235"/>
+<area shape="rect" id="node10" href="$classCCtlRoundRect.html" title="CCtlRoundRect" alt="" coords="592,208,707,235"/>
+<area shape="rect" id="node14" href="$classCHyperLinkText.html" title="CHyperLinkText" alt="" coords="409,259,526,285"/>
+</map>

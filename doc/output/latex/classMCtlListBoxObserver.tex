@@ -1,0 +1,153 @@
+\hypertarget{classMCtlListBoxObserver}{}\section{M\+Ctl\+List\+Box\+Observer Class Reference}
+\label{classMCtlListBoxObserver}\index{M\+Ctl\+List\+Box\+Observer@{M\+Ctl\+List\+Box\+Observer}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597f}{T\+Ctl\+List\+Box\+Event} \{ \newline
+\hyperlink{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597fa4ba478a28f09b91b393e893ac08139c1}{E\+Event\+Item\+Tapped}, 
+\hyperlink{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597fabc92b03e912556c47089bd5e91735863}{E\+Event\+Item\+Highlighted}, 
+\hyperlink{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597fab6706ed10da78be090cf70af8d680ffc}{E\+Event\+Item\+Confirmed}, 
+\hyperlink{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597fa95724c42e1f845e1c36dfcb3d0ec9f37}{E\+Event\+Selection\+Changed}, 
+\newline
+\hyperlink{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597fa8421c10105c6b882cb17a1f3166f834f}{E\+Event\+Match\+Buffer\+Changed}, 
+\hyperlink{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597faa21a7a3c75c3659a36b89307e291a03a}{E\+Event\+Top\+Reached}, 
+\hyperlink{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597fa43824f6c25215002bdef837408b5bc73}{E\+Event\+Bottom\+Reached}, 
+\hyperlink{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597fa035e3f0c21ddc1616b3761ef1f3f5ac7}{E\+Event\+Empty\+List\+Box\+Actioned}, 
+\newline
+\hyperlink{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597fa0b2b5240900e68d90e4fa1b12cb3e3bf}{E\+Event\+Highlight\+Moved}, 
+\hyperlink{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597faf2bb42155bddf80e5a39b304fe326498}{E\+Event\+Slot\+Index\+Changed}, 
+\hyperlink{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597faee24f3770660c68409bd84bfa6697045}{E\+Event\+Dimmed\+Item\+Confirmed\+Attempt}, 
+\hyperlink{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597fa1355ee232ee0fd81b51542c9623d2635}{E\+Event\+Match\+Buffer\+Full}, 
+\newline
+\hyperlink{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597fadf0d22a23099fd63cf17bbe65ea663db}{E\+Event\+Custom\+Start} = 0x1000
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classMCtlListBoxObserver_a346b02a3826ff1f15a61082e38dab958}{Handle\+List\+Box\+EventL} (\hyperlink{classCCtlListBox}{C\+Ctl\+List\+Box} $\ast$a\+List\+Box, \hyperlink{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597f}{T\+Ctl\+List\+Box\+Event} a\+Event\+Type, T\+Int a\+Item\+Index, T\+Int a\+Slot\+Id)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597f}\label{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597f}} 
+\index{M\+Ctl\+List\+Box\+Observer@{M\+Ctl\+List\+Box\+Observer}!T\+Ctl\+List\+Box\+Event@{T\+Ctl\+List\+Box\+Event}}
+\index{T\+Ctl\+List\+Box\+Event@{T\+Ctl\+List\+Box\+Event}!M\+Ctl\+List\+Box\+Observer@{M\+Ctl\+List\+Box\+Observer}}
+\subsubsection{\texorpdfstring{T\+Ctl\+List\+Box\+Event}{TCtlListBoxEvent}}
+{\footnotesize\ttfamily enum \hyperlink{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597f}{M\+Ctl\+List\+Box\+Observer\+::\+T\+Ctl\+List\+Box\+Event}}
+
+List box event codes. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+Event\+Item\+Tapped@{E\+Event\+Item\+Tapped}!M\+Ctl\+List\+Box\+Observer@{M\+Ctl\+List\+Box\+Observer}}\index{M\+Ctl\+List\+Box\+Observer@{M\+Ctl\+List\+Box\+Observer}!E\+Event\+Item\+Tapped@{E\+Event\+Item\+Tapped}}}\mbox{\Hypertarget{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597fa4ba478a28f09b91b393e893ac08139c1}\label{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597fa4ba478a28f09b91b393e893ac08139c1}} 
+E\+Event\+Item\+Tapped&This event is reported when an item is tapped, and denotes a user action on an item. This event is reported somewhat differently for items having a highlight layout and those that does not.
+
+When an item, having only a normal layout, is tapped on this event is triggered.
+
+An item that has a highlight layout, needs to be highlighted and then tapped for this event to be reported.
+
+The observer is allowed to change the state of the List Box and its components when receiving this event. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+Event\+Item\+Highlighted@{E\+Event\+Item\+Highlighted}!M\+Ctl\+List\+Box\+Observer@{M\+Ctl\+List\+Box\+Observer}}\index{M\+Ctl\+List\+Box\+Observer@{M\+Ctl\+List\+Box\+Observer}!E\+Event\+Item\+Highlighted@{E\+Event\+Item\+Highlighted}}}\mbox{\Hypertarget{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597fabc92b03e912556c47089bd5e91735863}\label{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597fabc92b03e912556c47089bd5e91735863}} 
+E\+Event\+Item\+Highlighted&This event is reported when a item having a highlight layout but not currently highlighted, is tapped. In this case a {\ttfamily E\+Event\+Highlight\+Moved} event will be reported first, followed by this event. Can be used as a way to distinguish between pen or key cause of highlight moved.
+
+The observer is allowed to change the state of the List Box and its components when receiving this event. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+Event\+Item\+Confirmed@{E\+Event\+Item\+Confirmed}!M\+Ctl\+List\+Box\+Observer@{M\+Ctl\+List\+Box\+Observer}}\index{M\+Ctl\+List\+Box\+Observer@{M\+Ctl\+List\+Box\+Observer}!E\+Event\+Item\+Confirmed@{E\+Event\+Item\+Confirmed}}}\mbox{\Hypertarget{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597fab6706ed10da78be090cf70af8d680ffc}\label{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597fab6706ed10da78be090cf70af8d680ffc}} 
+E\+Event\+Item\+Confirmed&Item confirm event. When an item is selected using select soft key.
+
+The observer is allowed to change the state of the List Box and its components when receiving this event. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+Event\+Selection\+Changed@{E\+Event\+Selection\+Changed}!M\+Ctl\+List\+Box\+Observer@{M\+Ctl\+List\+Box\+Observer}}\index{M\+Ctl\+List\+Box\+Observer@{M\+Ctl\+List\+Box\+Observer}!E\+Event\+Selection\+Changed@{E\+Event\+Selection\+Changed}}}\mbox{\Hypertarget{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597fa95724c42e1f845e1c36dfcb3d0ec9f37}\label{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597fa95724c42e1f845e1c36dfcb3d0ec9f37}} 
+E\+Event\+Selection\+Changed&An item has been selected or deselected in a multiple slect enabled List Box. If more then one item is affected the event will be reported with index parameters having value E\+Qik\+List\+Box\+Param\+Not\+Applicable.
+
+The observer must not alter the state of any List Box components when receiving this event. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+Event\+Match\+Buffer\+Changed@{E\+Event\+Match\+Buffer\+Changed}!M\+Ctl\+List\+Box\+Observer@{M\+Ctl\+List\+Box\+Observer}}\index{M\+Ctl\+List\+Box\+Observer@{M\+Ctl\+List\+Box\+Observer}!E\+Event\+Match\+Buffer\+Changed@{E\+Event\+Match\+Buffer\+Changed}}}\mbox{\Hypertarget{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597fa8421c10105c6b882cb17a1f3166f834f}\label{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597fa8421c10105c6b882cb17a1f3166f834f}} 
+E\+Event\+Match\+Buffer\+Changed&The buffer that holds the characters that has currently been matched, has changed.
+
+The observer must not alter the state of any List Box components when receiving this event. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+Event\+Top\+Reached@{E\+Event\+Top\+Reached}!M\+Ctl\+List\+Box\+Observer@{M\+Ctl\+List\+Box\+Observer}}\index{M\+Ctl\+List\+Box\+Observer@{M\+Ctl\+List\+Box\+Observer}!E\+Event\+Top\+Reached@{E\+Event\+Top\+Reached}}}\mbox{\Hypertarget{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597faa21a7a3c75c3659a36b89307e291a03a}\label{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597faa21a7a3c75c3659a36b89307e291a03a}} 
+E\+Event\+Top\+Reached&The top of the list has been reached. Event generated when standing on top item and trying to go up.
+
+The observer must not alter the state of any List Box components when receiving this event. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+Event\+Bottom\+Reached@{E\+Event\+Bottom\+Reached}!M\+Ctl\+List\+Box\+Observer@{M\+Ctl\+List\+Box\+Observer}}\index{M\+Ctl\+List\+Box\+Observer@{M\+Ctl\+List\+Box\+Observer}!E\+Event\+Bottom\+Reached@{E\+Event\+Bottom\+Reached}}}\mbox{\Hypertarget{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597fa43824f6c25215002bdef837408b5bc73}\label{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597fa43824f6c25215002bdef837408b5bc73}} 
+E\+Event\+Bottom\+Reached&The bottom of the list has been reached. Event generated when standing on last item and trying to go down.
+
+The observer must not alter the state of any List Box components when receiving this event. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+Event\+Empty\+List\+Box\+Actioned@{E\+Event\+Empty\+List\+Box\+Actioned}!M\+Ctl\+List\+Box\+Observer@{M\+Ctl\+List\+Box\+Observer}}\index{M\+Ctl\+List\+Box\+Observer@{M\+Ctl\+List\+Box\+Observer}!E\+Event\+Empty\+List\+Box\+Actioned@{E\+Event\+Empty\+List\+Box\+Actioned}}}\mbox{\Hypertarget{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597fa035e3f0c21ddc1616b3761ef1f3f5ac7}\label{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597fa035e3f0c21ddc1616b3761ef1f3f5ac7}} 
+E\+Event\+Empty\+List\+Box\+Actioned&A tap in an empty List Box generates this event.
+
+The observer is allowed to change the state of the List Box and its components when receiving this event. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+Event\+Highlight\+Moved@{E\+Event\+Highlight\+Moved}!M\+Ctl\+List\+Box\+Observer@{M\+Ctl\+List\+Box\+Observer}}\index{M\+Ctl\+List\+Box\+Observer@{M\+Ctl\+List\+Box\+Observer}!E\+Event\+Highlight\+Moved@{E\+Event\+Highlight\+Moved}}}\mbox{\Hypertarget{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597fa0b2b5240900e68d90e4fa1b12cb3e3bf}\label{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597fa0b2b5240900e68d90e4fa1b12cb3e3bf}} 
+E\+Event\+Highlight\+Moved&The highlight has moved.
+
+The observer must not alter the state of any List Box components when receiving this event. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+Event\+Slot\+Index\+Changed@{E\+Event\+Slot\+Index\+Changed}!M\+Ctl\+List\+Box\+Observer@{M\+Ctl\+List\+Box\+Observer}}\index{M\+Ctl\+List\+Box\+Observer@{M\+Ctl\+List\+Box\+Observer}!E\+Event\+Slot\+Index\+Changed@{E\+Event\+Slot\+Index\+Changed}}}\mbox{\Hypertarget{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597faf2bb42155bddf80e5a39b304fe326498}\label{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597faf2bb42155bddf80e5a39b304fe326498}} 
+E\+Event\+Slot\+Index\+Changed&The index on the slot has changed.
+
+The observer must not alter the state of any List Box components when receiving this event. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+Event\+Dimmed\+Item\+Confirmed\+Attempt@{E\+Event\+Dimmed\+Item\+Confirmed\+Attempt}!M\+Ctl\+List\+Box\+Observer@{M\+Ctl\+List\+Box\+Observer}}\index{M\+Ctl\+List\+Box\+Observer@{M\+Ctl\+List\+Box\+Observer}!E\+Event\+Dimmed\+Item\+Confirmed\+Attempt@{E\+Event\+Dimmed\+Item\+Confirmed\+Attempt}}}\mbox{\Hypertarget{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597faee24f3770660c68409bd84bfa6697045}\label{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597faee24f3770660c68409bd84bfa6697045}} 
+E\+Event\+Dimmed\+Item\+Confirmed\+Attempt&An attempt to confirm a dimmed item has been made.
+
+The observer is allowed to change the state of the List Box and its components when receiving this event. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+Event\+Match\+Buffer\+Full@{E\+Event\+Match\+Buffer\+Full}!M\+Ctl\+List\+Box\+Observer@{M\+Ctl\+List\+Box\+Observer}}\index{M\+Ctl\+List\+Box\+Observer@{M\+Ctl\+List\+Box\+Observer}!E\+Event\+Match\+Buffer\+Full@{E\+Event\+Match\+Buffer\+Full}}}\mbox{\Hypertarget{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597fa1355ee232ee0fd81b51542c9623d2635}\label{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597fa1355ee232ee0fd81b51542c9623d2635}} 
+E\+Event\+Match\+Buffer\+Full&The incremental match buffer is full, the maximum number of characters to match on has been reached.
+
+The observer must not alter the state of any List Box components when receiving this event. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+Event\+Custom\+Start@{E\+Event\+Custom\+Start}!M\+Ctl\+List\+Box\+Observer@{M\+Ctl\+List\+Box\+Observer}}\index{M\+Ctl\+List\+Box\+Observer@{M\+Ctl\+List\+Box\+Observer}!E\+Event\+Custom\+Start@{E\+Event\+Custom\+Start}}}\mbox{\Hypertarget{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597fadf0d22a23099fd63cf17bbe65ea663db}\label{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597fadf0d22a23099fd63cf17bbe65ea663db}} 
+E\+Event\+Custom\+Start&Custom events section start.
+
+The observer must not alter the state of any List Box components when receiving this event. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classMCtlListBoxObserver_a346b02a3826ff1f15a61082e38dab958}\label{classMCtlListBoxObserver_a346b02a3826ff1f15a61082e38dab958}} 
+\index{M\+Ctl\+List\+Box\+Observer@{M\+Ctl\+List\+Box\+Observer}!Handle\+List\+Box\+EventL@{Handle\+List\+Box\+EventL}}
+\index{Handle\+List\+Box\+EventL@{Handle\+List\+Box\+EventL}!M\+Ctl\+List\+Box\+Observer@{M\+Ctl\+List\+Box\+Observer}}
+\subsubsection{\texorpdfstring{Handle\+List\+Box\+Event\+L()}{HandleListBoxEventL()}}
+{\footnotesize\ttfamily virtual void M\+Ctl\+List\+Box\+Observer\+::\+Handle\+List\+Box\+EventL (\begin{DoxyParamCaption}\item[{\hyperlink{classCCtlListBox}{C\+Ctl\+List\+Box} $\ast$}]{a\+List\+Box,  }\item[{\hyperlink{classMCtlListBoxObserver_ab9551a8e542c692650a2d4254418597f}{T\+Ctl\+List\+Box\+Event}}]{a\+Event\+Type,  }\item[{T\+Int}]{a\+Item\+Index,  }\item[{T\+Int}]{a\+Slot\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Handles list box events.
+
+This pure virtual function is invoked by {\ttfamily C\+Qik\+List\+Box} to notify the observer of list box events.
+
+The List Box observer must never alter the state of the List Box or any of its components while in between a M\+Qik\+List\+Box\+Model\+::\+Model\+Begin\+Update\+LC and a M\+Qik\+List\+Box\+Model\+::\+Model\+End\+UpdateL call. Further more each event either allows or forbids altering of the List Box and its components upon receving the particular event, see {\ttfamily T\+Qik\+List\+Box\+Event} for further information on this.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a\+List\+Box} & The originating list box. \\
+\hline
+{\em a\+Event\+Type} & A code for the event. Further information may be obtained by accessing the list box itself. \\
+\hline
+{\em a\+Item\+Index} & The item index, if applicable, else E\+Qik\+List\+Box\+Param\+Not\+Applicable. \\
+\hline
+{\em a\+Slot\+Id} & The item slot id the event was generated in, if applicable, else E\+Qik\+List\+Box\+Param\+Not\+Applicable. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/peter/work/github/\+Barba\+G\+U\+I/inc/\+Ctl/Ctl\+List\+Box\+Observer.\+h\end{DoxyCompactItemize}
